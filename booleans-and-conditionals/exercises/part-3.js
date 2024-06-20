@@ -2,19 +2,27 @@ let engineIndicatorLight = 'red blinking';
 let fuelLevel = 21000;
 let engineTemperature = 1200;
 
-/* 5) Implement the following checks using if/else if/else statements:
+// 5) Implement the following checks using if/else if/else statements:
 
-a) If fuelLevel is above 20000 AND engineTemperature is at or below 2500, print "Full tank. Engines good."
+//a) If fuelLevel is above 20000 AND engineTemperature is at or below 2500, print "Full tank. Engines good."
+if(fuelLevel > 20000 && engineTemperature )
 
-b) If fuelLevel is above 10000 AND engineTemperature is at or below 2500, print "Fuel level above 50%.  Engines good."
 
-c) If fuelLevel is above 5000 AND engineTemperature is at or below 2500, print "Fuel level above 25%. Engines good."
 
-d) If fuelLevel is at or below 5000 OR engineTemperature is above 2500, print "Check fuel level. Engines running hot."
+//Please see part-1.js I coded it all without realizing there were different .js files already set up
 
-e) If fuelLevel is below 1000 OR engineTemperature is above 3500 OR engineIndicatorLight is red blinking print "ENGINE FAILURE IMMINENT!" 
 
-f) Otherwise, print "Fuel and engine status pending..." */
+
+
+//b) If fuelLevel is above 10000 AND engineTemperature is at or below 2500, print "Fuel level above 50%.  Engines good."
+
+//c) If fuelLevel is above 5000 AND engineTemperature is at or below 2500, print "Fuel level above 25%. Engines good."
+
+//d) If fuelLevel is at or below 5000 OR engineTemperature is above 2500, print "Check fuel level. Engines running hot."
+
+//e) If fuelLevel is below 1000 OR engineTemperature is above 3500 OR engineIndicatorLight is red blinking print "ENGINE FAILURE IMMINENT!" 
+
+//f) Otherwise, print "Fuel and engine status pending..." */
 
 // Code 5a - 5f here:
 
