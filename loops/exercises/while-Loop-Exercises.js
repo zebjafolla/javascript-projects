@@ -40,6 +40,7 @@ while(startingFuel > 0)
 /*Exercise #5: Output the result with the phrase, “The shuttle gained an altitude of ___ km.”
 
 If the altitude is 2000 km or higher, add “Orbit achieved!” Otherwise add, “Failed to reach orbit.”*/
+console.log(`The shuttle gained an altitude of ${shuttleAltitude} kms.`);
 if (shuttleAltitude > 2000)
   {
     console.log("Orbit achieved!");
