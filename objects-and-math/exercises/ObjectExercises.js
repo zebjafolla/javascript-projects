@@ -74,29 +74,20 @@ console.log(crewReports(almina));
 
 function fitnessTest(testGroup)
 {
+   console.log(testGroup.length);
    let steps = [0, 0, 0, 0, 0];
-   let ctr = 0;
-   let winner = false;
-   let winnerInfo;
-
+   let raceOrder = [];
    for (let i = 0; i < testGroup.length; i++)
       {
-         if (winner == false)
-            {
-               if(steps[i] > 20)
-                  {
-                     winner = true;
-                     winnerInfo = testGroup[i];
-                     console.log(winnerInfo)
-                     
-                  }
-               steps[i] += (testGroup[i].move());
-               ctr += 1;
-            }
-              
+      let ctr = 0;
+         while(steps[i] < 20)
+         {
+            steps[i] += (testGroup[i].move());
+            ctr += 1;
+         }
+      raceOrder.push(`${testGroup[i].name} took ${ctr} turns to take twenty steps.`)
       }
-
-      // return `${winnerInfo.name} took ${steps[i]} steps in ${ctr} turns to win this race.`;
+   return raceOrder;
 } 
          
 
