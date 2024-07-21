@@ -39,7 +39,9 @@ function processor(transmission){
     cleanDataArray.pop();
     cleanDataArray.shift();
     rawData = Number(cleanDataArray.join(""));
-    if (typeof rawData !== "number")
+    console.log(typeof rawData);
+    console.log(rawData);
+    if (rawData !== "number" || Number(rawData) === NaN)
         {
             return {
                 id : Number(array[0]),
@@ -55,5 +57,5 @@ function processor(transmission){
 
 }
 
-// console.log(processor("9>701::<4895848::72710>"));
+console.log(processor("9701::<487297403495<720912>"));
 module.exports = processor;

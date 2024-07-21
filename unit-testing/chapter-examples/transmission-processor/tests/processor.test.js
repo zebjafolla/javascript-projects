@@ -1,6 +1,6 @@
 const processor = require("../processor.js");
 const check = require("../check.js");
-const input = "9701::<489584::872710>"
+const input = "9701::<487297403495<720912>"
 
 describe("transmission processor", function() {
   test("make sure string is returned as object", function(){
