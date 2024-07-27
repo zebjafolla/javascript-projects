@@ -5,3 +5,11 @@
 // However, if the denominator is zero you should throw the error, "Attempted to divide by zero."
 
 // Code your divide function here:
+function divide(numerator, denominator){
+    if(numerator / denominator === 0)
+    {
+        throw runtimeError ("Attempted to divide by zero.")
+    }
+    return numerator / denominator;
+}
+console.log(divide(0, 13));
