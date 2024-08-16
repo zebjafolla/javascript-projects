@@ -12,9 +12,19 @@
     window.addEventListener("load", function() {
       let form = document.querySelector("form");
       form.addEventListener("submit", function(event) {
-        alert("submit clicked");
-      });
+        let userNameInput = document.querySelector("input[name=username]");
+        let teamNameInput = document.querySelector("input[name=team]");
+        if (userNameInput.value === "" || teamNameInput.value === "")
+        {
+          alert("Please enter all fields.");
+          event.preventDefault();
+        }
+        else 
+        {
+          alert("Username: " + userNameInput.value);
+        }
     });
+  });
   </script>
   <body>
     <form method="POST" action="https://handlers.education.launchcode.org/request-parrot">
