@@ -19,7 +19,8 @@ function randomSelection(arr){
   console.log(randomSelection(happiness));
 
 }
-let goggle = Math.random;
+let goggle = Math.random();
+
 console.log(goggle);
 console.log("----------------")
  //a) Print 3 random selections from each array.

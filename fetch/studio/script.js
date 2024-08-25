@@ -15,12 +15,19 @@ window.addEventListener("load", function(){
                 <h3>${astronaut.firstName} ${astronaut.lastName}</h3>
                 <ul>
                     <li>Hours in Space: ${astronaut.hoursInSpace}</li>
-                    <li>Active: ${astronaut.active}</li>
+                    <li id="active">Active: ${astronaut.active}
+                    </li>
                     <li>Skills: ${astronaut.skills.join(", ")}</li>
                 </ul>
                 </div>
                 <img class="avatar" src="${astronaut.picture}"/>
-                </div>`
+                </div>`;
+                if(astronaut.active === true)
+                {
+                    let green = document.getElementById("active");
+                    green.style.
+
+                }
            //Display the astronauts sorted from most to least time in space.
     // Make the “Active: true” text green, for astronauts that are still active (active is true).
         // Add a count of astronauts to the page.

@@ -3,6 +3,7 @@ function decreasingSum(integer) {
       return integer;
    } else {
       //call decreasingSum function again
+      return decreasingSum(integer - 1);
    }
 }
 

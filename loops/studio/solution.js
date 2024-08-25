@@ -91,7 +91,7 @@ function runProgram() {
   /// UNCOMMENT the remaining commented lines and change the password1 and password2 strings to ensure your code is doing its job ///
 
   let password1 = 'Regenerator';
-  let password2 = 'Generator';
+  let password2 = 'abcd';
   console.log("Time to run the password generator so we can update the menu tomorrow.")
   console.log(`The new password is: ${generatePassword(password1, password2)}`);
 }
